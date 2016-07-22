@@ -1,0 +1,169 @@
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+.face img {
+  opacity: 0.75;
+  backface-visibility: hidden;
+  transition: transform 1s;
+  width: 300px;
+  height: 300px;
+}
+
+
+.top img {
+  -webkit-clip-path: polygon(50% 13.4%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 13.4%, 0% 100%, 100% 100%);
+}
+
+.bottom {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.top  {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 0%;
+}
+
+.bottom img{
+  -webkit-clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);
+  clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);
+}
+
+
+/*
+.letter {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(153, 221, 255, 0.5);
+  text-align: center;
+  vertical-align: middle;
+}*/
+
+
+
+/*angle between uper faces = asin(1/(sqrt(2))), height = 2*sqrt(2)* img width*/
+.globe figure:nth-child(1) {
+  transform:
+              rotateY(    0deg)
+              translateZ( 0px)
+              rotateX(    35.26deg)
+              ;
+}
+
+.globe figure:nth-child(2) {
+  transform:
+              rotateY(    90deg)
+              translateZ( 0px)
+              rotateX(    35.26deg)
+              ;
+}
+
+.globe figure:nth-child(3) {
+  transform:
+              rotateY(    180deg)
+              translateZ( 0px)
+              rotateX(    35.26deg)
+              ;
+}
+
+.globe figure:nth-child(4) {
+  transform:
+              rotateY(    270deg)
+              translateZ( 0px)
+              rotateX(    35.26deg)
+              ;
+}
+
+.globe figure:nth-child(5) {
+  transform:
+              rotateY(    0deg)
+              translateY( 212.13px)
+              translateZ( 0px)
+              rotateX(   35.26deg)
+              ;
+}
+
+.globe figure:nth-child(6) {
+  transform:
+              rotateY(    90deg)
+              translateY( 212.13px)
+              translateZ( 0px)
+              rotateX(   35.26deg)
+              ;
+            }
+
+
+.globe figure:nth-child(7) {
+  transform:
+              rotateY(    180deg)
+              translateY( 212.13px)
+              translateZ( 0px)
+              rotateX(   35.26deg)
+              ;
+}
+
+.globe figure:nth-child(8) {
+  transform:
+              rotateY(    270deg)
+              translateY( 212.13px)
+              translateZ( 0px)
+              rotateX(   35.26deg)
+              ;
+}
+
+
+.globe-demo {
+  left: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.globe {
+  border: 1px dashed red;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: rotate-globe 30s infinite;
+  animation: rotate-globe 30s linear 0s infinite;
+  transform-origin: center center;
+  width: 430px;
+  height: 500px;
+}
+
+@-webkit-keyframes rotate-globe {
+    0%   {transform: rotateX(0deg) rotateY(0deg);}
+    100% {transform: rotateX(0deg) rotateY(360deg);}
+}
+
+@keyframes rotate-globe {
+  0%   {transform: rotateX(0deg) rotateY(0deg);}
+  100% {transform: rotateX(0deg) rotateY(360deg);}
+}
+
+
+
+.globe figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+
+}
+
+.image-select-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.img-bank img {
+  width: 100px;
+  height: 100px;
+
+}
