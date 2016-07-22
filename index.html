@@ -18,31 +18,64 @@
       <section class="globe-demo">
         <div class="globe">
 
-          <figure class="face top pic1"><img draggable="true" src="./assets/cat-2.jpg" /></figure>
-          <figure class="face top pic2"><img draggable="true" src="./assets/cat-3.jpg" /></figure>
-          <figure class="face top pic3"><img draggable="true" src="./assets/cat-4.jpg" /></figure>
-          <figure class="face top pic4"><img draggable="true" src="./assets/dog-1.jpg" /></figure>
-          <figure class="face bottom pic5"><img draggable="true" src="./assets/dog-2.jpg" /></figure>
-          <figure class="face bottom pic6"><img draggable="true" src="./assets/dog-3.jpg" /></figure>
-          <figure class="face bottom pic7"><img draggable="true" src="./assets/dog-4.jpg" /></figure>
-          <figure class="face bottom pic8"><img draggable="true" src="./assets/dog-5.jpg" /></figure>
+          <figure class="face top pic1" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/cat-1.jpg" />
+          </figure>
+          <figure class="face top pic2" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/cat-2.jpg" />
+          </figure>
+
+          <figure class="face top pic3" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/cat-3.jpg" />
+          </figure>
+
+          <figure class="face top pic4" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/dog-1.jpg" />
+          </figure>
+
+          <figure class="face bottom pic5" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/dog-2.jpg" />
+          </figure>
+
+          <figure class="face bottom pic6" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/dog-3.jpg" />
+          </figure>
+
+          <figure class="face bottom pic7" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/dog-4.jpg" />
+          </figure>
+
+          <figure class="face bottom pic8" ondrop="onImageDrop(event)" ondragover="allowDrop(event)" ondragover="">
+            <img draggable="false" ondragstart="dragImage(event)"  src="./assets/dog-5.jpg" />
+          </figure>
+
 
         </div>
 
-        <div class="image-select-container">
-
+        <div>
+          <h3>image bank</h3>
           <p>
             images here
           </p>
 
+          <div class="image-select-container">
 
-          <figure class="img-bank"><img draggable="true" src="./assets/flower-1.jpg" /></figure>
-          <figure class="img-bank"><img draggable="true" src="./assets/flower-2.jpg" /></figure>
-          <figure class="img-bank"><img draggable="true" src="./assets/squirrel.jpg" /></figure>
-          <figure class="img-bank"><img draggable="true" src="./assets/stars.jpg" /></figure>
-          <figure class="img-bank"><img draggable="true" src="./assets/tracks.jpg" /></figure>
-          <figure class="img-bank"><img draggable="true" src="./assets/trees.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/flower-1.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/flower-2.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/cat-1.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/cat-2.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/cat-3.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/dog-1.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/dog-2.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/dog-3.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/dog-4.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/dog-5.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/squirrel.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/stars.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/tracks.jpg" /></figure>
+            <figure class="img-bank"><img draggable="true" src="./assets/trees.jpg" /></figure>
 
+          </div>
         </div>
       </section>
 

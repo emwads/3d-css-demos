@@ -1,8 +1,14 @@
+
 .cf::after {
   content: "";
   display: block;
   clear: both;
 }
+
+figure {
+  margin: 10px;
+}
+
 
 
 
@@ -35,16 +41,6 @@
   clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);
 }
 
-
-/*
-.letter {
-  display: block;
-  height: 50px;
-  width: 50px;
-  background-color: rgba(153, 221, 255, 0.5);
-  text-align: center;
-  vertical-align: middle;
-}*/
 
 
 
@@ -123,17 +119,17 @@
   left: 180px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .globe {
-  border: 1px dashed red;
   position: relative;
   transform-style: preserve-3d;
   -webkit-animation: rotate-globe 30s infinite;
   animation: rotate-globe 30s linear 0s infinite;
   transform-origin: center center;
-  width: 430px;
+  width: 300px;
   height: 500px;
 }
 
