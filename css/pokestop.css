@@ -15,6 +15,11 @@
 }
 
 
+.offset-2 { transform: translateZ(2px); }
+.offset-2::after { transform: translateZ(2px); }
+.offset-1 { transform: translateZ(-2px); }
+.offset-1::after { transform: translateZ(-2px); }
+
 .y-flip {
   animation: y-flip 4s ease-in-out 0s infinite;
 }

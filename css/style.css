@@ -2,9 +2,29 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+header {  
+  text-align: center;
+}
+
+
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   color: #104DA1;
   display: inline-block;
+}
+
+
+.demos > article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+.poke-section {
+  background-color: gainsboro;
 }
