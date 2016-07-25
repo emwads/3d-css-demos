@@ -1,0 +1,62 @@
+
+.pokestop {
+  position: relative;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateX(15deg);
+  animation: rotate-stop 30s linear 0s infinite;
+  width: 300px;
+  height: 300px;
+}
+
+.pokestop img {
+  position: absolute;
+  transform-origin: center center;
+}
+
+
+.y-flip {
+  animation: y-flip 4s ease-in-out 0s infinite;
+}
+
+.y-flip-back {
+  animation: y-flip 4s ease-in-out 0s infinite reverse;
+}
+
+.y-fast {
+  animation: y-flip 3s ease-in-out 0s infinite;
+}
+
+.z-flip {
+  animation: z-flip 4s ease-in-out 0s infinite;
+}
+
+.x-flip {
+  animation: x-flip 4s ease-in-out 0s infinite;
+}
+
+
+
+@keyframes rotate-stop {
+  0% {transform: rotateY(15deg) rotateX(15deg);}
+  50%   {transform: rotateY(0deg) rotateX(0deg);}
+  100% {transform: rotateY(-15deg) rotateX(-15deg);}
+}
+
+@keyframes y-flip {
+  0%   {transform: rotateY(0deg);}
+  75%   {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+
+@keyframes z-flip {
+  0%   {transform: rotateZ(0deg);}
+  75% {transform: rotateZ(360deg);}
+  100% {transform: rotateZ(360deg);}
+}
+
+@keyframes x-flip {
+  0%   {transform: rotateX(0deg);}
+  75% {transform: rotateX(360deg);}
+  100% {transform: rotateX(360deg);}
+}

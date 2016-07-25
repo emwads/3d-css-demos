@@ -1,0 +1,10 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #104DA1;
+  display: inline-block;
+}

@@ -14,7 +14,7 @@ figure {
 
 
 .face img {
-  opacity: 0.75;
+  opacity: 0.95;
   backface-visibility: hidden;
   transition: transform 1s;
   width: 300px;
@@ -32,8 +32,8 @@ figure {
   transform-origin: 50% 100%;
 }
 .top  {
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
 }
 
 .bottom img{
@@ -135,12 +135,12 @@ figure {
 
 @-webkit-keyframes rotate-globe {
     0%   {transform: rotateX(0deg) rotateY(0deg);}
-    100% {transform: rotateX(0deg) rotateY(360deg);}
+    100% {transform: rotateX(360deg) rotateY(360deg);}
 }
 
 @keyframes rotate-globe {
   0%   {transform: rotateX(0deg) rotateY(0deg);}
-  100% {transform: rotateX(0deg) rotateY(360deg);}
+  100% {transform: rotateX(360deg) rotateY(360deg);}
 }
 
 
