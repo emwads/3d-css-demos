@@ -3,16 +3,19 @@
   position: relative;
   display: block;
   transform-style: preserve-3d;
-  transform: rotateY(30deg) rotateX(30deg);
+  transform: rotateY(30deg) rotateX(0deg);
   animation: rotate-stop 10s linear 0s infinite;
-  width: 220px;
-  height: 300px;
+  width: 300px;
+  perspective: 1000px;
+  margin: 50% 0 0 0;
+
+
 }
 
 .pokestop img {
   position: absolute;
   transform-origin: center center;
-
+  min-height: 275px;
 }
 
 .y-flip {

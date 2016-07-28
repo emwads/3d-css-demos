@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Picture Globe</title>
-    <script src="./lib/globe.js" charset="utf-8"></script>
     <link rel="stylesheet" href="./css/style.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="./css/globe.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./css/stars.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="./css/pokestop.css" media="screen" charset="utf-8">
     <link rel="styleheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Condensed:300,400" media="screen" charset="utf-8">
 
@@ -42,12 +42,20 @@
         </section>
       </article>
 
+
+      <article class="stars-section">
+        <header>
+          <h2>stars</h2>
+        </header>
+        <section id="sky">
+        </section>
+      </article>
+
+
       <article class="globe-section">
         <header>
           <h2>picture globe</h2>
-          <p>
-            Drag and drop images from the picture bank into the globe!
-          </p>
+
         </header>
 
         <section class="globe-demo">
@@ -88,9 +96,9 @@
           </div>
 
           <div>
-            <h3>image bank</h3>
+            <h3>Image Bank</h3>
             <p>
-              images here
+              Drag and drop images from the image bank into the globe!
             </p>
 
             <div class="image-select-container">
@@ -116,5 +124,26 @@
 
     </section>
 
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="star" clipPathUnits="objectBoundingBox">
+          <polygon points="0.51 0.21, 0.61 0.35, 0.74 0.41, 0.68 0.57, 0.68 0.73,
+                           0.50 0.70, 0.32 0.73, 0.32 0.57, 0.25 0.42, 0.39 0.35" />
+        </clipPath>
+        <clipPath id="twinkle" clipPathUnits="objectBoundingBox">
+          <polygon points="0.5 0, 0.61 0.35, 0.98 0.35, 0.68 0.57, 0.79 0.91,
+                           0.50 0.70, 0.21 0.91, 0.32 0.57, 0.02 0.35, 0.39 0.35" />
+        </clipPath>
+        <clipPath id="topTri" clipPathUnits="objectBoundingBox">
+          <polygon points="0.5 0.134, 0 1, 1 1" />
+        </clipPath>
+        <clipPath id="bottomTri" clipPathUnits="objectBoundingBox">
+          <polygon points="0.5 0.866, 0 0 , 1, 0" />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <script src="./lib/globe.js" charset="utf-8"></script>
+    <script src="./lib/stars.js" charset="utf-8"></script>
   </body>
 </html>

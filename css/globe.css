@@ -6,7 +6,7 @@
 }
 
 figure {
-  margin: 10px;
+  margin: 5px;
 }
 
 
@@ -24,7 +24,9 @@ figure {
 
 .top img {
   -webkit-clip-path: polygon(50% 13.4%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 13.4%, 0% 100%, 100% 100%);
+  /*clip-path: polygon(50% 13.4%, 0% 100%, 100% 100%);*/
+  clip-path: url(../index.html#topTri);
+
 }
 
 .bottom {
@@ -38,7 +40,9 @@ figure {
 
 .bottom img{
   -webkit-clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);
-  clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);
+  /*clip-path: polygon(50% 86.6%, 0% 0%, 100% 0%);*/
+  clip-path: url(../index.html#bottomTri);
+
 }
 
 
@@ -127,7 +131,7 @@ figure {
   position: relative;
   transform-style: preserve-3d;
   -webkit-animation: rotate-globe 30s infinite;
-  animation: rotate-globe 30s linear 0s infinite;
+  animation: rotate-globe 40s linear 0s infinite;
   transform-origin: center center;
   width: 300px;
   height: 500px;
@@ -135,12 +139,14 @@ figure {
 
 @-webkit-keyframes rotate-globe {
     0%   {transform: rotateX(0deg) rotateY(0deg);}
-    100% {transform: rotateX(360deg) rotateY(360deg);}
+    50%   {transform: rotateX(15deg) rotateY(360deg);}
+    100% {transform: rotateX(0deg) rotateY(0deg);}
 }
 
 @keyframes rotate-globe {
   0%   {transform: rotateX(0deg) rotateY(0deg);}
-  100% {transform: rotateX(360deg) rotateY(360deg);}
+  50%   {transform: rotateX(15deg) rotateY(360deg);}
+  100% {transform: rotateX(0deg) rotateY(0deg);}
 }
 
 
@@ -159,7 +165,7 @@ figure {
 }
 
 .img-bank img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 
 }
