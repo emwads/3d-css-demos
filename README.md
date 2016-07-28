@@ -1,6 +1,8 @@
-# CSS 3D transforms demos
+# CSS Demos
 
-View a few animations created using JavaScript and CSS. Note that these are best/only viewable on safari, chrome, or firefox.
+[See the demo in action][link]
+
+View a few animations created using JavaScript and CSS. Note that these are best/only viewable on updated versions of safari, Chrome, or Firefox.
 
 [link]:https://emwads.github.io/3d-css-demos/
 

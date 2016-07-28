@@ -1,4 +1,9 @@
 
+.poke-section {
+  background-color: #DC9E82;
+}
+
+
 .pokestop {
   position: relative;
   display: block;
@@ -6,8 +11,7 @@
   transform: rotateY(30deg) rotateX(0deg);
   animation: rotate-stop 10s linear 0s infinite;
   width: 300px;
-  perspective: 1000px;
-  margin: 50% 0 0 0;
+  margin: 15% 0 0 0;
 
 
 }

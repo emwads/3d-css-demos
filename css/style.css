@@ -7,12 +7,29 @@ header {
   text-align: center;
 }
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  margin: 0;
+  padding: 25px 0;
+  font-weight: normal;
+}
+
+nav {
+  background-color: #461E47;
+  color: #F2F3D9;
+  text-align: center;
+  padding: 25px 0;
+}
 
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  color: #104DA1;
+  color: #030027;
   display: inline-block;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0;
 }
 
 
@@ -22,10 +39,4 @@ h2 {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-}
-
-
-
-.poke-section {
-  background-color: gainsboro;
 }
