@@ -1,6 +1,6 @@
 
 .poke-section {
-  background-color: #DC9E82;
+  background-color: #FCF7F7;
 }
 
 
@@ -11,7 +11,7 @@
   transform: rotateY(30deg) rotateX(0deg);
   animation: rotate-stop 10s linear 0s infinite;
   width: 300px;
-  margin: 15% 0 0 0;
+  margin: 5% 0 0 0;
 
 
 }
@@ -45,8 +45,8 @@
 
 
 @keyframes rotate-stop {
-  0% {transform: rotateY(30deg) rotateX(30deg);}
-  100% {transform: rotateY(-30deg) rotateX(-30deg);}
+  0% {transform: rotateY(30deg) rotateX(10deg);}
+  100% {transform: rotateY(-30deg) rotateX(-10deg);}
 }
 
 @keyframes y-flip {

@@ -1,9 +1,4 @@
 
-.cf::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 figure {
   margin: 5px;
@@ -131,22 +126,30 @@ figure {
   position: relative;
   transform-style: preserve-3d;
   -webkit-animation: rotate-globe 30s infinite;
-  animation: rotate-globe 40s linear 0s infinite;
+  animation: rotate-globe 30s linear 0s infinite;
   transform-origin: center center;
-  width: 300px;
+  width: 310px;
   height: 500px;
+}
+
+.another-globe-container {
+  width: 400px;
+}
+
+.globe-section {
+  background-color: #FCF7F7;
 }
 
 @-webkit-keyframes rotate-globe {
     0%   {transform: rotateX(0deg) rotateY(0deg);}
-    50%   {transform: rotateX(15deg) rotateY(360deg);}
-    100% {transform: rotateX(0deg) rotateY(0deg);}
+    50%   {transform: rotateX(15deg) rotateY(180deg);}
+    100% {transform: rotateX(0deg) rotateY(360deg);}
 }
 
 @keyframes rotate-globe {
   0%   {transform: rotateX(0deg) rotateY(0deg);}
-  50%   {transform: rotateX(15deg) rotateY(360deg);}
-  100% {transform: rotateX(0deg) rotateY(0deg);}
+  50%   {transform: rotateX(15deg) rotateY(180deg);}
+  100% {transform: rotateX(0deg) rotateY(360deg);}
 }
 
 
@@ -161,11 +164,16 @@ figure {
 .image-select-container {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  /*width: 350px;*/
 }
 
 .img-bank img {
   width: 75px;
   height: 75px;
 
+}
+
+.bank {
+  width: 40%;
+  min-width: 300px;
 }
