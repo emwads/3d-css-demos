@@ -17,7 +17,7 @@ This animation is a simple demonstration of layering various 3d transforms on to
 This is another basic animation utilizing JavaScript to randomly add and remove twinkling stars from the "sky". The twinkling of the stars is animated with CSS.
 
 
-### Picture Octagon
+### Picture Octahedron
 
 Here images are clipped and rotated in 3-D to create a octahedron shape using CSS. Images from the image bank can be dragged to various faces of the octahedron to create a custom picture globe thanks to the HTML drag and drop API as well as a touch of JavaScript.
 
